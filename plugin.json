@@ -1,8 +1,8 @@
 {
   "name": "siyuan-auto-complete",
-  "author": "Achuan-2",
-  "url": "https://github.com/Achuan-2/siyuan-plugin-blockref-footnote",
-  "version": "0.0.2",
+  "author": "uulaile",
+  "url": "https://github.com/uulaile/siyuan-auto-complete",
+  "version": "0.0.1",
   "minAppVersion": "3.1.13",
   "backends": [
     "windows",
@@ -21,11 +21,11 @@
   ],
   "displayName": {
     "en_US": "FootnoteRef",
-    "zh_CN": "块引脚注"
+    "zh_CN": "自动补全"
   },
   "description": {
     "en_US": "Use blockref to implement footnote and memo",
-    "zh_CN": "使用思源的块引实现脚注和备注功能"
+    "zh_CN": "针对别名自动补全"
   },
   "readme": {
     "en_US": "README.md",
@@ -33,7 +33,7 @@
   },
   "funding": {
     "custom": [
-      "https://www.yuque.com/achuan-2"
+      ""
     ]
   },
   "keywords": [
