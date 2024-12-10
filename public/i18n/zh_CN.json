@@ -1,0 +1,99 @@
+{
+    "tips": "添加脚注",
+    "settings": {
+        "css": {
+            "title": "自定义样式",
+            "description": "自定义脚注块引、添加脚注时选中文字的样式、脚注内容块的样式"
+        },
+        "groups": {
+            "container": "<b style='font-size: 130%'>脚注存放设置</b>",
+            "style": "<b style='font-size: 130%'>脚注样式设置</b>"
+        },
+        "saveLocation": {
+            "title": "脚注存放位置",
+            "description": "可选择将脚注存放于当前文档末尾 or 指定文档 or 子文档 or 父块后",
+            "current": "当前文档末尾",
+            "specified": "指定文档",
+            "childDoc": "子文档",
+            "afterParent": "父块后"
+        },
+        "docId": {
+            "title": "指定文档的文档ID",
+            "description": "当脚注存放位置为“指定文档”时，通过文档ID指定文档，设置这个文档存放所有的脚注"
+        },
+        "footnoteContainerTitle": {
+            "title": "当前文档的脚注容器标题",
+            "description": "当脚注存放位置为“当前文档”时，设置存放脚注的标题名（用#指定标题级别）<br/>模板变量：<code>${filename}</code>当前文档标题",
+            "value": "脚注"
+        },
+        "footnoteContainerTitle2": {
+            "title": "指定文档的脚注容器标题",
+            "description": "当脚注存放位置为“指定文档”时，设置存放脚注的标题名（用#指定标题级别）<br/>模板变量：<code>${filename}</code>当前文档标题",
+            "value": "## ${filename} 脚注"
+        },
+        "footnoteContainerTitle3": {
+            "title": "子文档的脚注容器标题",
+            "description": "当脚注存放位置为“子文档”时，设置存放脚注的文档标题名<br/>模板变量：<code>${filename}</code>当前文档标题",
+            "value": "${filename} 脚注"
+        },
+        "updateFootnoteContainerTitle": {
+            "title": "是否自动更新脚注容器标题",
+            "description": "每次创建脚注是否根据模板自动更新脚注容器标题"
+        },
+        "footnoteRefStyle": {
+            "title": "脚注引用样式",
+            "description": "脚注引用的样式：“块引”或“块链接”",
+            "ref": "块引",
+            "link": "块链接"
+        },
+        "selectFontStyle": {
+            "title": "选中文本的样式",
+            "description": "选中文本是否添加样式",
+            "none": "无",
+            "custom": "自定义样式"
+        },
+        "order": {
+            "title": "插入脚注的顺序",
+            "description": "顺序插入 or 逆序插入",
+            "asc": "顺序",
+            "desc": "逆序"
+        },
+        "footnoteBlockref": {
+            "title": "脚注引用锚文本",
+            "description": "自定义锚文本",
+            "value": "[注]"
+        },
+        "enableOrderedFootnotes": {
+            "title": "脚注自动数字编号",
+            "description": "使用数字编号（如[1], [2]等）替代自定义锚文本。开启后每次新建和删除脚注会自动对所有脚注重新排序编号。</br>注意：目前开启此项，当脚注数量越多，文档内容越长，排序耗时越长，介意请勿开启。"
+        },
+        "floatDialog":{
+            "title": "是否开启脚注弹窗",
+            "description": "开启后，添加脚注时会弹出弹窗，方便填写脚注内容"
+        },
+        "template": {
+            "title": "脚注内容模版",
+            "description": "模板变量：<code>${selection}</code>选中文本的富文本内容，<code>${selection:text}</code>选中文本的纯文本内容，<code>${content}</code>脚注内容占位，<code>${refID}</code>选中文本所在的块的ID，<code>${index}</code>脚注编号默认带原块链接，<code>${index:text}</code>脚注编号纯文本</br>使用<code>${{...}}</code>可以使用Sprig语法，例如插入当前时间<code>${{now | date \"20060102 15:04:05\"}}</code></br>可以使用kramdown语法设置块样式"
+        },
+        "footnoteAlias": {
+            "title": "脚注内容块的别名",
+            "description": "设置脚注内容块的别名，提示这个块是脚注内容，设置为空则不设置别名",
+            "value": ""
+        },
+        "reset": {
+            "title": "<span data-type=\"strong text\" style=\"color: var(--b3-font-color1); font-size: 130%\">重置设置</span>",
+            "description": "重置所有设置为默认值",
+            "label": "重置",
+            "confirm": "是否重置该插件所有设置为默认值？"
+        }
+    },
+    "deleteFootnote": "删除脚注",
+    "reorderFootnotes": "脚注编号",
+    "cancelReorderFootnotes": "取消脚注编号",
+    "errors": {
+        "noDocId": "【块引脚注插件】请填写指定文档ID"
+    },
+    "indexAnchor": "[注]",
+    "showFootnoteSelection": "显示选中文本",
+    "hideFootnoteSelection": "隐藏选中文本"
+}
